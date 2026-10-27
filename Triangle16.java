@@ -5,15 +5,28 @@ public class Triangle16 {
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
 
-        int i = 1;          //diubah dari 0 jadi 1           
+        //segitiga bertingkat
+        int i = 1;                    
         while (i <= n) {
-            int j = 1;    //diubah dari 0 jadi 1     
-            while (j <= i) {
+            int j = 0;         
+            while (j < i) {
                 System.out.print("*");
                 j++;
             }
-            System.out.println();   //ditambah, agar pindah
+            System.out.println();  
             i++;
+        }
+
+        //segitiga terbalik
+        i = n;
+        while (i >= 1) {
+            int j = 0;         
+            while (j < i) {
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();  
+            i--;
         }
         sc.close();
     }
