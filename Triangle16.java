@@ -5,13 +5,14 @@ public class Triangle16 {
         System.out.print("Masukkan nilai n = ");
         int n = sc.nextInt();
 
-        int i = 0;                     
+        int i = 1;          //diubah dari 0 jadi 1           
         while (i <= n) {
-            int j = 0;      
+            int j = 1;    //diubah dari 0 jadi 1     
             while (j <= i) {
                 System.out.print("*");
                 j++;
             }
+            System.out.println();   //ditambah, agar pindah
             i++;
         }
         sc.close();
