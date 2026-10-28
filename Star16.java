@@ -10,6 +10,5 @@ public class Star16 {
         }
         System.out.println();
         sc.close();
-        
     }
 }
